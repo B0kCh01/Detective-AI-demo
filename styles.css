@@ -48,7 +48,7 @@ iframe {
     border: 20px solid black;
     width: 100vw;
     max-width: 400px;
-    height: 100vh;
+    height: calc(100vh - 17px);
     max-height: 800px;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 20px 40px;
