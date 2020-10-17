@@ -14,3 +14,5 @@ $("iframe").hover(
         $("h2").stop().slideUp();
     }
 );
+
+$("iframe").attr("src", "/app.html");
