@@ -1,6 +1,6 @@
 {
-    "name": "detectiveAI_UI",
-    "short_name": "detectiveAI_UI",
+    "name": "detectiveai",
+    "short_name": "detectiveai",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
