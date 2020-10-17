@@ -41,7 +41,7 @@ h1 {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: calc(100% - 17px);
+    height: calc(90vh - 17px);
 }
 
 iframe {
@@ -54,40 +54,17 @@ iframe {
     box-shadow: rgba(0, 0, 0, 0.2) 0 20px 40px;
 }
 
-.cursor {
-    position: fixed;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-}
-
-.cursor--small {
-    width: 5px;
-    height: 5px;
-    left: -2.5px;
-    top: -2.5px;
-    border-radius: 50%;
-    z-index: 11000;
-    background: var(--color-text);
-}
-
-.cursor--canvas {
-    width: 100vw;
-    height: 100vh;
-    z-index: 12000;
-}
-
 @media all and (max-width: 500px) {
     iframe {
         border: none;
         box-shadow: none;
         border-radius: 0;
         width: 100%;
-        height: 100%;
+        height: 90vh;
         max-width: initial;
     }
     .container {
-        justify-content: space-between;
+        justify-content: flex-start;
     }
     .container>span {
         margin: 10px;
