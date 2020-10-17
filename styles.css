@@ -5,29 +5,53 @@ body {
 }
 
 body {
-    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: rgb(25, 25, 36);
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgb(25, 25, 36);
 }
 
-a.button {}
+span.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+a.button {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffcc00;
+    background: rgba(255, 204, 0, 0.1);
+    padding: 8px 15px;
+    border-radius: 25px;
+    margin: 0 5px;
+    transition: all .2s ease-out;
+}
+
+a.button:hover {
+    opacity: 0.7;
+}
 
 .container {
     display: flex;
-    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1300px;
+    min-height: 300vh;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 100%;
-    max-width: 1300px;
+    align-items: flex-start;
     flex-grow: 1;
 }
 
-.container span {
-    text-align: center;
+.container .text {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30vh;
 }
 
 .container img {
@@ -53,10 +77,23 @@ h2 {
     color: white;
 }
 
+p {
+    position: sticky;
+    top: 50vh;
+    width: 40vw;
+    max-width: 600px;
+    margin: 50vh 0;
+    color: white;
+    font-size: 23px;
+    line-height: 1.5;
+    text-align: center;
+}
+
 .phone {
-    position: relative;
     display: flex;
-    height: 100%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -64,26 +101,28 @@ h2 {
 }
 
 iframe {
-    border: 20px solid black;
     width: 400px;
     height: 100%;
     max-height: 800px;
     margin: 0;
+    border: 20px solid black;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 20px 40px;
 }
 
+@media all and (max-width: 1250px) {}
+
 @media all and (max-width: 500px) {
-    span {
+    .text {
         display: none;
     }
     iframe {
+        width: 100%;
+        max-width: initial;
+        max-height: none;
         border: none;
         box-shadow: none;
         border-radius: 0;
-        width: 100%;
-        max-height: none;
-        max-width: initial;
     }
     .container {
         width: 100%;
@@ -97,7 +136,7 @@ iframe {
         margin: 0;
     }
     h1 {
-        font-size: 15px;
         margin: 0;
+        font-size: 15px;
     }
 }

@@ -1,7 +1,8 @@
 AOS.init({
-    delay: 1000,
     duration: 1000,
     easing: "easeInOutQuint",
+    mirror: true,
+    anchor: "top-center"
 });
 
 $("h2").hide();
