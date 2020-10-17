@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+body {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(25, 25, 36);
+}
+
+.container>img {
+    width: 40vw;
+    max-width: 200px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.4) 0 5px 3px);
+    -webkit-user-drag: none;
+}
+
+h1 {
+    margin: 0;
+    font-size: 80px;
+    text-align: center;
+    background-image: linear-gradient(221deg, #ffcc00 0%, rgb(255, 245, 158) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 50px;
+    text-shadow: rgba(255, 255, 255, 0.335) 0 0 5px;
+}
+
+.phone {
+    position: relative;
+}
+
+iframe {
+    border: 20px solid black;
+    width: 100vw;
+    max-width: 400px;
+    height: 100vh;
+    max-height: 800px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 20px 40px;
+}
+
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.cursor--small {
+    width: 5px;
+    height: 5px;
+    left: -2.5px;
+    top: -2.5px;
+    border-radius: 50%;
+    z-index: 11000;
+    background: var(--color-text);
+}
+
+.cursor--canvas {
+    width: 100vw;
+    height: 100vh;
+    z-index: 12000;
+}
