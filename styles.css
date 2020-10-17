@@ -41,7 +41,7 @@ h1 {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: calc(100vh - 20px);
+    height: calc(100vh - 17px);
 }
 
 iframe {
