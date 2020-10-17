@@ -12,6 +12,8 @@ body {
     align-items: center;
 }
 
+a.button {}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -42,8 +44,13 @@ h1 {
     background-image: linear-gradient(221deg, #ffcc00 0%, rgb(255, 245, 158) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 50px;
     text-shadow: rgba(255, 255, 255, 0.335) 0 0 5px;
+}
+
+h2 {
+    margin: 20px;
+    font-size: 30px;
+    color: white;
 }
 
 .phone {
