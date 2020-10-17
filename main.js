@@ -5,6 +5,7 @@ AOS.init({
     anchor: "top-center"
 });
 
+$("iframe").attr("src", "/app.html");
 $("h2").hide();
 $("iframe").hover(
     function() {
@@ -14,5 +15,3 @@ $("iframe").hover(
         $("h2").stop().slideUp();
     }
 );
-
-$("iframe").attr("src", "/app.html");
